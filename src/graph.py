@@ -1,3 +1,7 @@
+import json
+import random
+from pandas import read_csv
+
 class Graph:
     def __init__(self) -> None:
         self.adjacency_list = {}
@@ -29,6 +33,45 @@ class Graph:
         return []
     
 
+    """  FALTA FAZER O LOAD GRAPH """
+    def load_graph(self, file_path: str) -> None:
+        df = read_csv(file_path).values.tolist()
+        for i in df:
+            self.add_vertex(i[0])
+            self.add_vertex(i[1])
+            self.add_edge(i[0], i[1])
+
+            
+
+    
+    def bfs(self, start_vertex: str) -> list:
+        visited = []
+        queue = [start_vertex]
+        while queue:
+            current_vertex = queue.pop(0)
+            if current_vertex not in visited:
+                visited.append(current_vertex)
+                queue.extend(self.adjacency_list[current_vertex])
+        return visited
+
+    def bfs_distance(self, start_vertex: str, end_vertex: str) -> int:
+        visited = []
+        queue = [start_vertex]
+        distance = 0
+        while queue:
+            current_vertex = queue.pop(0)
+            if current_vertex not in visited:
+                visited.append(current_vertex)
+                queue.extend(self.adjacency_list[current_vertex])
+                distance += 1
+                if current_vertex == end_vertex:
+                    return distance
+        return -1
+    
+    def random_vertex(self) -> str:
+        return random.choice(list(self.adjacency_list.keys()))
+    
+    
 
 if __name__ == "__main__":
     graph = Graph()
@@ -45,10 +88,4 @@ if __name__ == "__main__":
     graph.add_edge("D", "E")
     graph.add_edge("D", "F")
     graph.add_edge("E", "F")
-    print(graph.adjacency_list)
-    graph.remove_edge("A", "B")
-    print(graph.adjacency_list)
-    graph.remove_vertex("A")
-    print(graph.adjacency_list)
-    print(graph.obtain_adjacency_list("B"))
-    print(graph.obtain_adjacency_list("A"))
+    print(graph.bfs_distance("A", "F"))

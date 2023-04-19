@@ -1,0 +1,5 @@
+{
+    "banana": ["pera", "uva", "abacaxi", "manga", "melancia", "melão", "laranja", "limão", "acerola", "caqui", "cereja", "framboesa", "goiaba", "graviola", "jabuticaba", "kiwi", "mamão", "maracujá", "morango", "pêssego", "pitanga", "tangerina", "tamarindo", "ameixa", "amora", "carambola", "cupuaçu", "figo", "jabuticaba", "jaca", "jambolão", "jamelão", "jambu", "jambu-açu", "jambu-de-água", "jambu-do"],
+    "sobremesa": ["torta", "pudim", "bolo", "brigadeiro", "pavê", "mousse", "sorvete", "gelatina", "doce", "açaí, banana"],
+    "abacaxi": ["sobremesa", "fruta", "doce", "tropical", "verão", "refrescante", "cítrico", "acidez", "amarelo", "verde", "vermelho"] 
+}
