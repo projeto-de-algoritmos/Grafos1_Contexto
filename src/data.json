@@ -1,5 +1,18 @@
 {
-    "banana": ["pera", "uva", "abacaxi", "manga", "melancia", "melão", "laranja", "limão", "acerola", "caqui", "cereja", "framboesa", "goiaba", "graviola", "jabuticaba", "kiwi", "mamão", "maracujá", "morango", "pêssego", "pitanga", "tangerina", "tamarindo", "ameixa", "amora", "carambola", "cupuaçu", "figo", "jabuticaba", "jaca", "jambolão", "jamelão", "jambu", "jambu-açu", "jambu-de-água", "jambu-do"],
-    "sobremesa": ["torta", "pudim", "bolo", "brigadeiro", "pavê", "mousse", "sorvete", "gelatina", "doce", "açaí, banana"],
-    "abacaxi": ["sobremesa", "fruta", "doce", "tropical", "verão", "refrescante", "cítrico", "acidez", "amarelo", "verde", "vermelho"] 
+    "banana": ["pera", "uva", "abacaxi", "manga", "melancia", "melão", "laranja", "limão", "acerola", "caqui", "cereja", "framboesa", "goiaba", "graviola", "jabuticaba", "kiwi", "mamão", "maracujá", "morango", "pêssego", "pitanga", "tangerina", "tamarindo", "ameixa", "amora", "carambola", "cupuaçu", "figo", "jaca", "jambolão", "jamelão", "jambu", "jambu-açu", "jambu-de-água", "jambu-do"],
+    "sobremesa": ["torta", "pudim", "bolo", "brigadeiro", "pavê", "mousse", "sorvete", "gelatina", "doce", "açaí", "banana"],
+    "abacaxi": ["sobremesa", "fruta", "doce", "tropical", "verão", "refrescante", "cítrico", "acidez", "amarelo", "verde", "vermelho"], 
+    "comida": ["sobremesa", "fruta", "doce", "tropical", "verão", "refrescante", "cítrico", "acidez", "amarelo", "verde", "vermelho"],
+    "almoço": ["arroz", "feijão", "carne", "frango", "peixe", "batata", "salada", "macarrão", "sopa", "pão", "bife", "ovo", "linguiça", "sobremesa","garfo","faca", "colher"],
+    "arma": ["faca", "pistola", "revólver", "glock", "taser", "arma", "arma de fogo", "arma branca", "espada", "machado", "lança", "soco", "chute"],
+    "arma branca": ["faca", "espada", "machado", "lança", "soco", "chute"],
+    "arma de fogo": ["pistola", "revólver", "glock", "taser"],
+    "natureza": ["floresta", "mata", "selva", "jardim", "parque", "praia", "rio", "lago", "mar", "oceano", "montanha", "cachoeira", "bananeira", "fruta"],
+    "casa": ["quarto", "sala", "cozinha", "banheiro", "escada", "porta", "janela", "chuveiro", "pia", "lavabo", "lavanderia", "garagem", "varanda", "sacada", "churrasqueira", "fogão", "forno", "geladeira", "freezer", "microondas", "fogão", "fogão a lenha", "fogão a gás", "fogão elétrico", "fogão industrial", "fogão de mesa", "fogão de piso"],
+    "cozinha": ["fogão", "forno", "geladeira", "freezer", "microondas", "fogão", "fogão a lenha", "fogão a gás", "fogão elétrico", "fogão industrial", "fogão de mesa", "fogão de piso", "panela", "frigideira", "faca", "colher", "garfo", "prato", "copo", "talher", "tábua", "tábua de carne", "tábua de queijo", "tábua de frios", "tábua de madeira", "tábua de corte"],
+    "bananeira": ["banana", "arvore", "natureza", "fruta"],
+    "fruta": ["banana", "pera", "uva", "abacaxi", "manga", "melancia", "melão", "laranja", "limão", "acerola", "caqui", "cereja", "framboesa", "goiaba", "graviola", "jabuticaba", "kiwi", "mamão", "maracujá", "morango", "pêssego", "pitanga", "tangerina", "tamarindo", "ameixa", "amora", "carambola", "cupuaçu", "figo", "jabuticaba", "jaca", "jambolão", "jamelão", "jambu", "jambu-açu", "jambu-de-água"]
+    
+
+    
 }

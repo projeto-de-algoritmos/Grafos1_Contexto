@@ -1,6 +1,9 @@
+#codign: utf-8
+
 import json
 import random
-from pandas import read_csv
+
+
 
 class Graph:
     def __init__(self) -> None:
@@ -33,15 +36,14 @@ class Graph:
         return []
     
 
-    """  FALTA FAZER O LOAD GRAPH """
     def load_graph(self, file_path: str) -> None:
-        df = read_csv(file_path).values.tolist()
-        for i in df:
-            self.add_vertex(i[0])
-            self.add_vertex(i[1])
-            self.add_edge(i[0], i[1])
-
-            
+        with open(file_path, "r") as file:
+            data = json.load(file)
+            for i in data:
+                self.add_vertex(i)
+                for j in data[i]:
+                    self.add_vertex(j)
+                    self.add_edge(i, j)           
 
     
     def bfs(self, start_vertex: str) -> list:
@@ -74,18 +76,11 @@ class Graph:
     
 
 if __name__ == "__main__":
+
     graph = Graph()
-    graph.add_vertex("A")
-    graph.add_vertex("B")
-    graph.add_vertex("C")
-    graph.add_vertex("D")
-    graph.add_vertex("E")
-    graph.add_vertex("F")
-    graph.add_edge("A", "B")
-    graph.add_edge("A", "C")
-    graph.add_edge("B", "D")
-    graph.add_edge("C", "E")
-    graph.add_edge("D", "E")
-    graph.add_edge("D", "F")
-    graph.add_edge("E", "F")
-    print(graph.bfs_distance("A", "F"))
+    graph.load_graph("./src/data.json")
+
+    print(graph.obtain_adjacency_list("sobremesa"))
+
+    print(graph.bfs_distance("uva","banana"))
+    

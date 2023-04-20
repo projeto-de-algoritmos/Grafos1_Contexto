@@ -1,9 +1,10 @@
+#coding = utf-8
 from flask import Flask, render_template, request
 import graph 
 
 app = Flask(__name__)
 palavras = graph.Graph()
-palavras.load_graph("./src/data.csv")
+palavras.load_graph("./src/data.json")
 correct_word = palavras.random_vertex()
 
 @app.route('/', methods=['GET', 'POST'])
