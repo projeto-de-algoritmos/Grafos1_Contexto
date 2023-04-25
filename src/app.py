@@ -14,7 +14,7 @@ def index():
     if request.method == 'POST':
         word = request.form['word']
         if word == correct_word:
-            return render_template('index.html', message='Correct!')
+            return render_template('index.html', message='Acertou!!')
         else:
             distance = palavras.bfs_distance(correct_word, word)
             return render_template('index.html', message=f'Errou! Seu palpite está a {distance} da palavra correta. CORRETA {correct_word}')

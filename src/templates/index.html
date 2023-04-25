@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/style.css">
     <title>Contexto</title>
 </head>
+
 <body>
-    <form action ="/" method="post">
-        <label for="word"></label>
-        <input type="text" name="word" id="word">
-        <input type="submit" value="Enviar">
-    </form>
-    <p>{{correct_word}}</p>
-    {% if message %}
-        <p>{{message}}</p>
-    {% endif %}
+    <div class="registration-form">
+
+        <form action="/" method="post">
+            <img src="../static/img/img.gif" class="img-fluid rounded mx-auto d-block" alt="logo" width="100"
+                height="100">
+            <h2 class="text-center">Contexto</h2>
+            <label for="word"></label>
+            <input type="text" class="form-control item " name="word" id="word" placeholder="Digite uma palavra">
+            <input type="submit" class="btn btn-block send" value="Enviar">
+            <p>{{correct_word}}</p>
+            {% if message %}
+            <p>{{message}}</p>
+            {% endif %}
+        </form>
+    </div>
+
+
+
+
 </body>
+
 </html>
