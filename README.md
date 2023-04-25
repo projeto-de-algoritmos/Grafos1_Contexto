@@ -7,24 +7,36 @@
 |Matrícula | Aluno |
 | -- | -- |
 | 18/0119231  |  Eduardo Maia Rezende |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 17/0107426  |  Kayro César Silva Machado |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona.
+ Contexto é um jogo de adivinhação de palavras e funciona da seguinte maneira: os jogadores devem adivinhar uma palavra qualquer, assim o jogador receberá uma resposta do quão próximo o seu palpite está da palavra certa. Por exemplo, se a palavra for "esportes" e o jogador escrever "futebol", o jogo indicará que o palpite está muito próximo da palavra correta. Isso ocorre porque ambos os termos fazem parte do mesmo contexto, como o próprio nome do jogo sugere.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+Adicione 3 ou mais screenshots do projeto em funcionamento.....
 
 ## Instalação 
 **Linguagem**: Python<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Framework**: Flask<br>
 
-## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+- Dependências:
+  - Flask
 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+
+### Passo 1:
+ Caso não possua as dependências descritas acima, instale-as na pasta raiz do projeto utilizando comando abaixo:
+```sh
+pip3 install -r requirements.txt
+```
+### Passo 2:
+Entre na pasta **src** do projeto e execute o arquivo principal  com o comando abaixo:
+```
+python3 app.py
+```
+
+## Uso
+
+Acesse a porta 5000 a partir do link [http://127.0.0.1:5000/](http://127.0.0.1:5000/), digite uma palavra e clique no botão enviar.
 
 
 
