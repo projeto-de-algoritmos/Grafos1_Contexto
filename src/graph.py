@@ -1,4 +1,4 @@
-#codign: utf-8
+#codign= utf-8
 
 import json
 import random

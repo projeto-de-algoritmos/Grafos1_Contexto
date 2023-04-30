@@ -23,11 +23,33 @@
             <input type="text" class="form-control item " name="word" id="word" placeholder="Digite uma palavra">
             <input type="submit" class="btn btn-block send" value="Enviar">
             <p>{{correct_word}}</p>
-            {% if message %}
-            <p>{{message}}</p>
+            {% if result_error %}
+                <div class="result_error"><p>{{result_error}}</p></div>
+                <div class="message"><p>{{message}}</p></div>
+            {% else %}
+                <div class="result_correct"><p>{{result_correct}}</p></div>
+                <div class="message"><p>{{message}}</p></div>
             {% endif %}
+
+            
+        </form>
+        
+        <div class="como-jogar">
+        <form>
+           
+                <h2>Como funciona o jogo?</h2>
+                <p>Encontre a palavra oculta. Faça quantas tentativas forem necessárias.
+    
+                    As palavras foram organizadas por sua semelhança de contexto com a palavra oculta.
+                    
+                    Após enviar uma palavra, você receberá a posição dela na lista. A palavra oculta está na posição zero.
+                    
+                    O algoritmo usa o contexto em que as palavras são empregadas para avaliar a similaridade entre elas.</p>
+    
         </form>
     </div>
+</div>
+    
 
 
 
