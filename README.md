@@ -14,10 +14,10 @@
 
 ## Screenshots
 
-![Contexto](src\static\img\contexto.gif)
+![Contexto](src/static/img/contexto.gif)
 
 ## Video de Apresentação
-[![Watch the video](src\static\img\thumb.png)](https://www.youtube.com/watch?v=-uWtM48wCGc)
+[![Watch the video](src/static/img/thumb.png)](https://www.youtube.com/watch?v=-uWtM48wCGc)
 
 ## Instalação 
 **Linguagem**: Python<br>
