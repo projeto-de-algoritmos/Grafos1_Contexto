@@ -1,6 +1,6 @@
 # Contexto
 
-**Número da Lista**: X<br>
+**Número da Lista**: 1<br>
 **Conteúdo da Disciplina**: Grafos 1<br>
 
 ## Alunos
