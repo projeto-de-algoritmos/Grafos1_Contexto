@@ -13,7 +13,11 @@
  Contexto é um jogo de adivinhação de palavras e funciona da seguinte maneira: os jogadores devem adivinhar uma palavra qualquer, assim o jogador receberá uma resposta do quão próximo o seu palpite está da palavra certa. Por exemplo, se a palavra for "esportes" e o jogador escrever "futebol", o jogo indicará que o palpite está muito próximo da palavra correta. Isso ocorre porque ambos os termos fazem parte do mesmo contexto, como o próprio nome do jogo sugere.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.....
+
+![Contexto](src\static\img\contexto.gif)
+
+## Video de Apresentação
+[![Watch the video](src\static\img\thumb.png)](https://www.youtube.com/watch?v=-uWtM48wCGc)
 
 ## Instalação 
 **Linguagem**: Python<br>
@@ -21,6 +25,7 @@ Adicione 3 ou mais screenshots do projeto em funcionamento.....
 
 - Dependências:
   - Flask
+  - Pandas
 
 
 ### Passo 1:
